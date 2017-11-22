@@ -59,7 +59,7 @@ for f in sys.argv[2:]:
     # The 1 in the second argument indicates that we should upsample the image
     # 1 time.  This will make everything bigger and allow us to detect more
     # faces.
-    dets = cnn_face_detector(img, 1)
+    dets = cnn_face_detector(img, 3)
     '''
     This detector returns a mmod_rectangles object. This object contains a list of mmod_rectangle objects.
     These objects can be accessed by simply iterating over the mmod_rectangles object
